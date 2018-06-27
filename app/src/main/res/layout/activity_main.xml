@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Caculator"
+        android:textColor="#defc1f69"
+        android:textSize="35sp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:id="@+id/textViewTitle"/>
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type number number two:"
+        android:textSize="25sp"
+        android:id="@+id/hintNumberOne"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_below="@id/textViewTitle"/>
+    <EditText
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Type number number one:"
+        android:textSize="25sp"
+        android:id="@+id/hintNumberTwo"
+        android:layout_below="@id/hintNumberOne"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="50dp"
+        />
+    <TextView
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:textSize="25sp"
+        android:textColor="#f20"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/hintNumberTwo"
+        android:id="@+id/textviewResult"/>
+    <Button
+           android:id="@+id/buttonAddition"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/textviewResult"
+            android:text="+"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/buttonSubtraction"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/textviewResult"
+            android:text="-"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/buttonMultiplication"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_below="@id/buttonAddition"
+            android:text="*"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/buttonDivision"
+            android:padding="10dp"
+            android:textSize="30sp"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_below="@id/buttonSubtraction"
+            android:text="/"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+</RelativeLayout>
